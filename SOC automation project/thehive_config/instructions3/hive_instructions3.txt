@@ -1,0 +1,14 @@
+root@thehive:~# chown -R thehive:thehive /opt/thp
+root@thehive:~# ls -la /opt/thp
+#make sure thehive gets all the permisiions .
+root@thehive:~# nano /etc/thehive/application.conf
+#put in the public ip address of your thehive as done in the screenshot provided and if you have not changed the hostname before then dont change it now .
+root@thehive:~# systemctl start thehive
+root@thehive:~# systemctl enable thehive
+root@thehive:~# systemctl status thehive
+if the hive is not running then please check your elasticsearch and cassandra and try to troubleshoot them .
+Login to your hive ip address using defalt credentials on port 9000.
+go to your wazuh and log into it using the credentials provided to you before by wazuh in the root@wazuh .
+Open windows powershell and follow the commands as shown on the wazuh dashboard .
+ Now youll have your wazuh agent up and running .
+ 

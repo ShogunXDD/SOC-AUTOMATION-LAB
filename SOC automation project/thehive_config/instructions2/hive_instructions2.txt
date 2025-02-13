@@ -1,0 +1,6 @@
+#write the following commands in your hive shell :
+root@thehive:~# nano /etc/elasticsearch/elasticsearch.yml
+# i have provided the screenshots of the configurations to be done in elasticsearch.yml file . Please do the following changes .
+root@thehive:~# systemctl start elasticsearch.service
+root@thehive:~# systemctl enable elasticsearch.service
+root@thehive:~# systemctl status elasticsearch.service

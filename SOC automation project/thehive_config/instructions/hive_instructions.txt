@@ -1,0 +1,12 @@
+root@thehive:~# nano /etc/cassandra/cassandra.yaml
+Search for listen address and rpc_address and change it to to public IP address of thehive setup by you .
+Also search for seed_provider and change the seed to public IP address of thehive . Leave the port as 7000 , do not change the port in seed .
+You can search all these terms in a file using 'CTRL+W' and then configure the file . 
+Exit the file using 'CTRL+X' press Y and ENTER .
+Enter the following commands :
+root@thehive:~# systemctl stop cassandra.service
+root@thehive:~# rm -rf /var/lib/cassandra/*
+root@thehive:~# systemctl start cassandra.service
+root@thehive:~# systemctl status cassandra.service
+if the service is up and running , press q . 
+
